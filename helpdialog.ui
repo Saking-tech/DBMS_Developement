@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog</class>
+ <widget class="QDialog" name="HelpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>650</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/helpSymbol.svg</normaloff>:/icons/helpSymbol.svg</iconset>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>601</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Loading a Dataset:
+Loading a file can be done by clicking on File menu -&gt; Load Dataset
+Alternatively, by clicking on the page symbol in the toolbar at the top of the app.
+
+The form of dataset:
+The app currently is designed to work with datasets saved in txt file, where the data is listed in two columns. The first column is the x coordinate of the data point while the second is the y- coordinate of the datapoints.
+The x and y coordinates can be either separated by a tap or a comma.   
+
+Plotting a dataset:
+The app currently has only one way of plotting a dataset, that is by right-clicking on the dataset window-&gt; plot-&gt; XY plot. 
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
